@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Pemrograman Web 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <h1>Pemrograman Web I</h1>
+            <p>Selamat Datang di Website Pembelajaran HTML & CSS Layout</p>
+        </header>
+
+        <!-- Navigasi (Flexbox: Logo di kiri, Menu di kanan) -->
+       <nav>
+    <div class="logo">MyWebsite</div>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Data Diri</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+    </ul>
+</nav>
+
+        <!-- Section Utama (Grid Container) -->
+        <section class="main-content">
+            <!-- Article -->
+            <article>
+                <h2>ARTICLE - Pengenalan Layout Web</h2>
+                <p>Layout web adalah struktur dasar dari tata letak elemen-elemen di halaman web. Penggunaan struktur semantic HTML seperti <code>header</code>, <code>nav</code>, <code>article</code>, <code>aside</code>, dan <code>footer</code> sangat membantu memperjelas struktur dokumen.</p>
+                <p>Dengan menggabungkan <strong>Flexbox</strong> dan <strong>CSS Grid</strong>, kita dapat merancang tampilan antarmuka web yang rapi, responsif, dan mudah diatur.</p>
+                
+                <h3>Jadwal Perkuliahan</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mata Kuliah</th>
+                            <th>Hari</th>
+                            <th>Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pemrograman Web I</td>
+                            <td>Senin</td>
+                            <td>08:00 - 10:30</td>
+                        </tr>
+                        <tr>
+                            <td>Basis Data</td>
+                            <td>Rabu</td>
+                            <td>10:30 - 13:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <!-- Aside -->
+            <aside>
+                <h3>ASIDE - Info Terkini</h3>
+                <p>Pengumuman dan tautan penting minggu ini:</p>
+                <ul>
+                    <li>Tugas Layout CSS dikumpulkan minggu depan.</li>
+                    <li>Materi Flexbox & Grid telah diunggah.</li>
+                    <li>Ujian Tengah Semester bulan depan.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>FOOTER - &copy; 2026 Pemrograman Web I. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

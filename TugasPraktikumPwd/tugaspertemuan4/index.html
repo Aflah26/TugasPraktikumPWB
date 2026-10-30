@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="top">
+        <nav class="navbar">
+            <h2>Latihan</h2>
+            <div>
+                <a href="#beranda">Beranda</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </nav>
+
+        <section class="hero" id="beranda">
+            <p class="label">SELAMAT DATANG</p>
+            <h1>Belajar Membuat Website</h1>
+            <p>Contoh halaman web sederhana untuk latihan tombol Back to Top menggunakan HTML, CSS, dan JavaScript.</p>
+            <a class="hero-button" href="#tentang">Jelajahi Halaman</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="content-section" id="tentang">
+            <h2>Tentang Website</h2>
+            <p>Website ini dibuat sebagai contoh latihan pemrograman web. Halaman memiliki beberapa bagian agar pengunjung dapat melakukan scroll ke bawah.</p>
+            <p>Ketika halaman digulir lebih dari 500 piksel, tombol panah ke atas akan muncul di bagian kanan bawah layar. Tombol tersebut dapat digunakan untuk kembali ke bagian paling atas halaman.</p>
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>HTML</h3>
+                    <p>HTML digunakan untuk membuat struktur dan isi halaman website.</p>
+                </article>
+                <article class="info-card">
+                    <h3>CSS</h3>
+                    <p>CSS digunakan untuk mengatur warna, tata letak, jarak, dan tampilan halaman.</p>
+                </article>
+                <article class="info-card">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript digunakan untuk membuat tombol Back to Top menjadi interaktif.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section alternate" id="layanan">
+            <h2>Materi Pembelajaran</h2>
+            <p>Berikut beberapa materi dasar yang dapat dipelajari ketika membuat website.</p>
+            <div class="lesson-list">
+                <article><span>01</span><div><h3>Struktur HTML</h3><p>Mengenal elemen dasar seperti header, nav, main, section, dan footer.</p></div></article>
+                <article><span>02</span><div><h3>Desain CSS</h3><p>Mengatur tampilan website agar lebih rapi, menarik, dan mudah dibaca.</p></div></article>
+                <article><span>03</span><div><h3>Interaksi JavaScript</h3><p>Menggunakan event scroll, click, mouseenter, dan mouseleave.</p></div></article>
+                <article><span>04</span><div><h3>Pengujian Website</h3><p>Menguji halaman dengan melakukan scroll ke bawah dan mencoba tombol panah.</p></div></article>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Informasi Tambahan</h2>
+            <p>Silakan scroll halaman ini beberapa kali. Tombol panah akan tampil setelah posisi scroll melewati 500 piksel.</p>
+            <p>Secara bawaan, tombol memiliki opacity 50% agar tidak terlalu mengganggu isi halaman. Ketika pointer diarahkan ke tombol, opacity berubah menjadi 100% sehingga tombol terlihat lebih jelas.</p>
+            <p>Ketika tombol diklik, JavaScript menjalankan fungsi scroll ke posisi paling atas dengan efek gerakan yang halus atau smooth scrolling.</p>
+            <div class="quote-box">
+                “Belajar membuat website dimulai dari memahami struktur, desain, dan interaksi.”
+            </div>
+        </section>
+
+        <section class="content-section alternate" id="kontak">
+            <h2>Kontak</h2>
+            <p>Ini adalah bagian akhir dari contoh halaman website.</p>
+            <p>Terima kasih sudah mengunjungi halaman latihan Back to Top.</p>
+            <a class="hero-button" href="#top">Kembali ke Header</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Website Saya. Dibuat untuk latihan PWB.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
