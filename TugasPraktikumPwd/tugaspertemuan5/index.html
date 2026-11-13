@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header class="hero">
+        <nav>
+            <h2>MINI<span>STORE.</span></h2>
+            <p>Belanja mudah, harga bersahabat.</p>
+        </nav>
+
+        <div class="hero-content">
+            <span class="tagline">WELCOME TO OUR STORE</span>
+            <h1>Temukan Produk <br>Favoritmu di Sini!</h1>
+            <p>Berbagai pilihan produk berkualitas dengan harga terbaik.</p>
+            <a href="#products" class="hero-button">Belanja Sekarang ↓</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section" id="products">
+            <div>
+                <h2>Produk Pilihan</h2>
+                <p>Temukan barang favoritmu hari ini.</p>
+            </div>
+
+            <div class="search-box">
+                <span>🔍</span>
+                <input type="text" id="search-input"
+                    placeholder="Cari produk favoritmu...">
+            </div>
+        </section>
+
+        <div class="container">
+
+            <div class="product-list" id="product-list"></div>
+
+            <aside class="cart-panel">
+                <div class="cart-heading">
+                    <div>
+                        <span class="cart-icon">🛒</span>
+                        <h2>Keranjang</h2>
+                    </div>
+                    <span class="cart-label">Belanja</span>
+                </div>
+
+                <button id="toggle-cart">Tampilkan / Sembunyikan</button>
+
+                <ul class="cart-items" id="cart-items"></ul>
+
+                <div class="cart-information">
+                    <div>
+                        <span>Total Item</span>
+                        <strong id="cart-count">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Total Harga</span>
+                        <strong id="cart-total">Rp 0</strong>
+                    </div>
+                </div>
+
+                <div class="cart-actions">
+                    <button id="empty-cart">Kosongkan</button>
+                    <button id="checkout-btn">Checkout →</button>
+                </div>
+
+                <div class="summary-box" id="summary-box">
+                    <h3>Ringkasan Pesanan</h3>
+                    <p><strong>Nama Pembeli:</strong>
+                        <span id="summary-name"></span>
+                    </p>
+
+                    <p><strong>Daftar Item:</strong></p>
+                    <ul id="summary-list"></ul>
+
+                    <p class="summary-total">
+                        Total Bayar: Rp <span id="summary-total">0</span>
+                    </p>
+                </div>
+
+                <p class="secure-text">✨ Terima kasih sudah berbelanja!</p>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <h3>MINISTORE.</h3>
+        <p>© 2026 MiniStore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
