@@ -16,20 +16,20 @@
             text-align: left;
         }
         .header {
-            background-color: #00FF00; /* Hijau terang */
+            background-color: #00FF00; 
         }
         .ganjil {
-            background-color: #FFFF00; /* Kuning */
+            background-color: #FFFF00;
         }
         .genap {
-            background-color: #00FFFF; /* Biru muda (Cyan) */
+            background-color: #00FFFF; 
         }
     </style>
 </head>
 <body>
 
 <table>
-    <!-- Baris Header Pertama -->
+    
     <tr>
         <td>bilangan</td>
         <?php
@@ -39,18 +39,18 @@
         ?>
     </tr>
 
-    <!-- Baris Isi Perkalian (1 sampai 10) -->
+    
     <?php
     for ($baris = 1; $baris <= 10; $baris++) {
         echo "<tr>";
-        // Kolom pertama di setiap baris (Header samping)
+    
         echo "<td class='header'>$baris</td>";
 
         // Kolom hasil perkalian
         for ($kolom = 1; $kolom <= 10; $kolom++) {
             $hasil = $baris * $kolom;
             
-            // Menentukan warna sel berdasarkan hasil ganjil atau genap
+    
             $warna = ($hasil % 2 == 0) ? "genap" : "ganjil";
             
             echo "<td class='$warna'>$hasil</td>";
