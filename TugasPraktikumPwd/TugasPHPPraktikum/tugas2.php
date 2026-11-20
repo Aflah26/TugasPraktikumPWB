@@ -46,7 +46,7 @@
     
         echo "<td class='header'>$baris</td>";
 
-        // Kolom hasil perkalian
+        
         for ($kolom = 1; $kolom <= 10; $kolom++) {
             $hasil = $baris * $kolom;
             
